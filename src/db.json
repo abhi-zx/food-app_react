@@ -1,0 +1,32 @@
+[
+    {   "image":"https://media.istockphoto.com/photos/delicious-vegetarian-pizza-on-white-picture-id1192094401?k=20&m=1192094401&s=612x612&w=0&h=jesvXuPyvqM36GQ5QEvJrL3QZjK6YKsziUUF3ZbW0gw=",
+        "name":"Pizza1",
+        "price":"500",
+        "size":"small"
+    },
+    {   "image":"https://kauveryhospital.com/blog/wp-content/uploads/2021/04/pizza-5179939_960_720.jpg",
+        "name":"Pizza2",
+        "price":"600",
+        "size":"medium"
+    },
+    {   "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Greek_pizza_%281%29.jpg/1200px-Greek_pizza_%281%29.jpg",
+        "name":"Pizza4",
+        "price":"600",
+        "size":"large"
+    },
+    {   "image":"https://media.istockphoto.com/photos/delicious-vegetarian-pizza-on-white-picture-id1192094401?k=20&m=1192094401&s=612x612&w=0&h=jesvXuPyvqM36GQ5QEvJrL3QZjK6YKsziUUF3ZbW0gw=",
+        "name":"chicken pizza",
+        "price":"900",
+        "size":"large"
+    },
+    {   "image":"https://kauveryhospital.com/blog/wp-content/uploads/2021/04/pizza-5179939_960_720.jpg",
+        "name":"pizza potato",
+        "price":"600",
+        "size":"large"
+    },
+    {   "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Greek_pizza_%281%29.jpg/1200px-Greek_pizza_%281%29.jpg",
+        "name":"Pizza4",
+        "price":"800",
+        "size":"small"
+    }
+]
