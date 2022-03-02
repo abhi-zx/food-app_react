@@ -3,6 +3,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 const Product = (props) => {
     // console.log(props);
+    const add =(e,product)=>{
+      e.preventDefault()
+      console.log(product)
+    }
     const {product}= props
   return (
    <Link to={`/product/${product._id}`}>
@@ -15,7 +19,7 @@ const Product = (props) => {
         
         <div className='flex justify-between items-center mt-4'>
             <span>${product.price}</span>
-            <button className="bg-yellow-500 py-1 px-4 rounded-full font-bold">Add</button>
+            <button onClick={(e)=>{add(e,product)}} className="bg-yellow-500 py-1 px-4 rounded-full font-bold">Add</button>
         </div>
     </div></Link>
   )
