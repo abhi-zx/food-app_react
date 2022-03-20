@@ -1,11 +1,38 @@
 // import { Link } from '@material-ui/icons'
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {useContext} from 'react'
+import {CartContext} from '../context/CartContext'
 const Product = (props) => {
     // console.log(props);
+     const {cart,setCart}=useContext(CartContext)
+    // console.log(cart)
+
     const add =(e,product)=>{
       e.preventDefault()
-      console.log(product)
+      // cart={
+      //   items:{
+            // id_1:1,
+            // id_2:1
+      //   },
+      //   totalitems:1
+      // }
+      let _cart = {...cart}
+      if(!_cart.items)
+      _cart.items={}
+      if(_cart.items[product._id]){
+        _cart.items[product._id]++
+      }
+      else{
+        _cart.items[product._id]=1
+      }
+
+      if(!_cart.totalitems){
+        _cart.totalitems=0
+        
+      }
+      _cart.totalitems+=1;
+      setCart(_cart)
     }
     const {product}= props
   return (

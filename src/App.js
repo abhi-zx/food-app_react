@@ -11,13 +11,19 @@ function App() {
 
   useEffect(()=>{
     const cart = window.localStorage.getItem('cart');
-
+    setCart(JSON.parse(cart))
   },[])
+  
+  useEffect(()=>{
+   
+     window.localStorage.setItem('cart',JSON.stringify(cart));
+
+  },[cart])
   return (
     <> 
     {/* <Route exact  path="/"element={<Home/>}></Route> */}
      <Router>
-       <CartContext.Provider value={{name:"abhishek"}}>
+       <CartContext.Provider value={{cart,setCart}}>z
        <Navigation/>
        <Routes>
          <Route exact  path="/"element={<Home/>}></Route>
